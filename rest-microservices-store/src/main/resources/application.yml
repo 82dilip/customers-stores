@@ -20,13 +20,13 @@ spring:
   rabbitmq:
     addresses: ${vcap.services.${PREFIX:}rabbitmq.credentials.uri:amqp://${RABBITMQ_HOST:localhost}:${RABBITMQ_PORT:5672}}
 
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-  client:
-    registryFetchIntervalSeconds: 5
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    metadataMap:
+#      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+#  client:
+#    registryFetchIntervalSeconds: 5
 
 logging:
   level:

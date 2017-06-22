@@ -22,16 +22,16 @@ stores:
   ribbon:
     ServerListRefreshInterval: 1000
 
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    metadataMap:
-      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-  client:
-    region: default
-    registryFetchIntervalSeconds: 5
-    availabilityZones: 
-      default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
+#eureka:
+#  instance:
+#    leaseRenewalIntervalInSeconds: 10
+#    metadataMap:
+#      instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+#  client:
+#    region: default
+#    registryFetchIntervalSeconds: 5
+#    availabilityZones: 
+#      default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
 
 # For demo only allow more hystrix connections
 hystrix:
@@ -40,9 +40,9 @@ hystrix:
     bus:
       enabled: true
 
-spring:
-  rabbitmq:
-    addresses: ${vcap.services.${PREFIX:}rabbitmq.credentials.uri:amqp://${RABBITMQ_HOST:localhost}:${RABBITMQ_PORT:5672}}
+#spring:
+#  rabbitmq:
+#    addresses: ${vcap.services.${PREFIX:}rabbitmq.credentials.uri:amqp://${RABBITMQ_HOST:localhost}:${RABBITMQ_PORT:5672}}
 
 logging:
   level:

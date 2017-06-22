@@ -42,7 +42,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author Oliver Gierke
  */
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 public class StoreApp extends RepositoryRestConfigurerAdapter {
 
     @Override

@@ -26,8 +26,8 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapt
  * @author Oliver Gierke
  */
 @SpringBootApplication
-@EnableCircuitBreaker
-@EnableDiscoveryClient
+//@EnableCircuitBreaker
+//@EnableDiscoveryClient
 public class CustomerApp extends RepositoryRestConfigurerAdapter {
 
 	@Override
